@@ -1,0 +1,93 @@
+/* Reset أساسي */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f8fb;
+    color: #333;
+    padding: 20px;
+    direction: rtl;
+}
+
+h1 {
+    text-align: center;
+    color: #003366;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+hr {
+    width: 80px;
+    height: 4px;
+    background-color: #0077b6;
+    border: none;
+    margin: 0 auto 40px auto;
+    border-radius: 5px;
+}
+
+.content2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.item1, .item3 {
+    background: #fff;
+    padding: 30px 20px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.item1:hover, .item3:hover {
+    transform: translateY(-5px);
+}
+
+.item1 h2, .item3 h2 {
+    font-size: 24px;
+    color: #0077b6;
+    margin-bottom: 10px;
+}
+
+.item1 h3, .item3 h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.item1 a img,
+.item3 a img {
+    margin-top: 10px;
+    transition: transform 0.2s ease;
+}
+
+.item1 a img:hover,
+.item3 a img:hover {
+    transform: scale(1.1);
+}
+
+.item1 h3 img,
+.item3 h3 img {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+a img:last-child {
+    display: block;
+    margin: 30px auto 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content2 {
+        flex-direction: column;
+        align-items: center;
+    }
+}

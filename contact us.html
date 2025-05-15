@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Centered Image with Animation</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+  }
+  .container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .container:hover {
+    transform: scale(1.1) translateY(-10px);
+    box-shadow: 0 15px 30px rgba(255, 59, 86, 0.5);
+  }
+  .container .emoji {
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: scale(0.5);
+    pointer-events: none;
+  }
+  .container:hover .emoji {
+    opacity: 1;
+    transform: scale(1);
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <img src="card.PNG" alt="Business Card" />
+   
+  </div>
+</body>
+</html>

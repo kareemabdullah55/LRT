@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LRT</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo-container">
+      <img src="logo.png" alt="LRT Logo" class="logo" />
+    </div>
+    <h1>LRT</h1>
+    <p>Your Gateway to Global Trade Excellence</p>
+  </header>
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="service" onclick="openModal('modal1')">
+      <h3>Supply Chain Management</h3>
+    </div>
+    <div class="service" onclick="openModal('modal2')">
+      <h3>Trade Consulting</h3>
+    </div>
+    <div class="service" onclick="openModal('modal3')">
+      <h3>Trade Finance Solutions</h3>
+    </div>
+    <div class="service" onclick="openModal('modal4')">
+      <h3>Market Intelligence</h3>
+    </div>
+    <div class="service" onclick="openModal('modal5')">
+      <h3>International Sales & Distribution</h3>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+ <section class="gallery">
+  <h2>Together, we shape the future of communication and business</h2>
+  <div class="images-container">
+    <img src="1.png" alt="Portfolio Image 1" />
+    <img src="2.png" alt="Portfolio Image 2" />
+    <img src="3.png" alt="Portfolio Image 3" />
+    <img src="4.png" alt="Portfolio Image 4" />
+    <img src="5.png" alt="Portfolio Image 5" />
+    <img src="6.png" alt="Portfolio Image 6" />
+  </div>
+</section>
+
+
+  <!-- Modals -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal1')">&times;</span>
+      <h3>Supply Chain Management</h3>
+      <ul>
+        <li>Shipping and customs clearance.</li>
+        <li>Inventory tracking and order management.</li>
+        <li>Improving transport and distribution efficiency.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal2')">&times;</span>
+      <h3>Trade Consulting</h3>
+      <ul>
+        <li>Market feasibility studies and entry strategies.</li>
+        <li>Customs regulations and international laws consultation.</li>
+        <li>Supplier and buyer selection support.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal3')">&times;</span>
+      <h3>Trade Finance Solutions</h3>
+      <ul>
+        <li>Facilitating Letters of Credit (LCs).</li>
+        <li>Partnering with banks and financial institutions.</li>
+        <li>Secure payment solutions between parties.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="modal4" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal4')">&times;</span>
+      <h3>Market Intelligence</h3>
+      <ul>
+        <li>Tracking global market movements.</li>
+        <li>Price analysis and competitive trends.</li>
+        <li>Monitoring supplier and distributor performance.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="modal5" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal5')">&times;</span>
+      <h3>International Sales & Distribution</h3>
+      <ul>
+        <li>Opening new markets and identifying opportunities.</li>
+        <li>Building regional and international distributor networks.</li>
+        <li>Efficient wholesale and retail operations.</li>
+      </ul>
+    </div>
+  </div>
+  <a href="contact us.html" class="contact-btn">Contact us</a>
+
+
+  <footer class="footer">
+    <p>&copy; 2025 LRT. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
